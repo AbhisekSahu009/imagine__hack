@@ -1,11 +1,12 @@
 // src/App.jsx
-import React from 'react';
+import ShareThoughts from './components/ShareThoughts';
 import SaySomething from './components/SaySomething';
 import './App.css';
 
 function App() {
     return (
         <div className="app-container">
+            <ShareThoughts />
             <SaySomething />
         </div>
     );
