@@ -162,3 +162,61 @@
 .toggle-btn.active {
   color: white;
 }
+
+
+
+/* Insta Post Styling */
+.insta-post {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-caption {
+  margin: 10px 0;
+  color: #555;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.action-button:hover {
+  color: #ff4d4d;
+}
