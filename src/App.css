@@ -104,3 +104,61 @@
   font-size: 24px;
   color: #646cff;
 }
+
+
+
+
+
+
+
+
+
+
+/* Toggle Switch Container */
+.toggle-container {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Background Gradient Slide */
+.toggle-bg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(45deg, #8a2be2, #ff1493);
+  border-radius: 25px;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+.toggle-bg.left {
+  transform: translateX(0%);
+}
+
+.toggle-bg.right {
+  transform: translateX(100%);
+}
+
+/* Buttons */
+.toggle-btn {
+  flex: 1;
+  border: none;
+  background: none;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.toggle-btn.active {
+  color: white;
+}
