@@ -12,7 +12,8 @@
 .search-bar {
   display: flex;
   align-items: center;
-  width: 400px;
+  justify-content: center;
+  width: 45%;
   background-color: white;
   border-radius: 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -164,8 +165,23 @@
 
 
 /* Insta Post Styling */
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 1%;
+  margin-right: 3%;
+}
+
+
 .insta-post {
-  width: 400px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -181,8 +197,8 @@
 }
 
 .profile-pic {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -202,6 +218,9 @@
   display: flex;
   justify-content: space-around;
 }
+
+
+
 
 .action-button {
   background: none;
