@@ -3,16 +3,29 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRight, FaPaperclip, FaMicrophone } from 'react-icons/fa';
 import '../App.css';
+import axios from "axios";
 
 const SaySomething = () => {
     const navigate = useNavigate();
     const [isFocused, setIsFocused] = useState(false);
     const [inputValue, setInputValue] = useState('');
 
-    const handleSend = () => {
+    const handleSend = async () => {
         if (inputValue.trim()) {
-            navigate('/search');
-            setInputValue('');
+            try {
+                const response = await axios.post('http://localhost:8080/api/say-something', {
+                    message: inputValue,
+                });
+
+                console.log('Response from backend:', response.data);
+
+                // You can display the response or handle it as needed
+                alert(`Gemini Data: ${JSON.stringify(response.data.geminiData)}`);
+                setInputValue('');
+                navigate('/search'); // Navigate after sending
+            } catch (error) {
+                console.error('Error sending message:', error);
+            }
         }
     };
 
