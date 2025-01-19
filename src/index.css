@@ -4,15 +4,16 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #e5e5e5;
+  background-image: url("assets/home_background_imaginehackathon.png");
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100% ;
 }
 
 textarea {
@@ -42,7 +43,8 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f2f2f2;
+  width: 100vw;
+
 }
 
 /* Search Bar Styling */
@@ -98,20 +100,26 @@ h2 {
 
 /* SaySomething Input Field */
 .input-container {
-  width: 400px;
+  width: 75%;
   padding: 10px 15px;
-  background-color: white;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
   margin-bottom: 20px;
+  position: fixed; /* Stick to a specific position */
+  bottom: 20px; /* Distance from the bottom of the window */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  background-color: #fff; /* Optional: Background to ensure visibility */
+  z-index: 100; /* Keep it above other content */
 }
 
 .input-container.focused {
-  width: 600px;
-  padding: 15px 20px;
+  width: 87.5%;
+  align-items: center;
+  justify-content: center;
   height: 120px;
 }
 
@@ -120,10 +128,13 @@ h2 {
   border: none;
   resize: none;
   outline: none;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   font-family: inherit;
   background: transparent;
 }
+
 
 .icons {
   display: flex;
