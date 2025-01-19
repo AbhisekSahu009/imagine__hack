@@ -249,6 +249,7 @@
 /* Container */
 .signup-container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,6 +376,7 @@
 /* Container */
 .otp-container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,6 +477,7 @@
 /* Container */
 .details-container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -628,6 +631,7 @@
 /* Container */
 .following-container {
   height: 100vh;
+  width: 100vw;
   padding: 20px;
   display: flex;
   flex-direction: column;
